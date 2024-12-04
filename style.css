@@ -83,6 +83,7 @@ form {
     color: #4036A9;
     font-size: 1.25rem;
     grid-row-start: 4;
+    background-color: #ffffff;
 }
 
 input[placeholder],
