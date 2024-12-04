@@ -1,0 +1,149 @@
+* {
+    font-family: 'Be Vietnam Pro';
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+body {
+    background-image: url(./resources/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 48px;
+    width: 56%;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+option {
+    font-size: 1rem;
+}
+
+label {
+    font-size: 0.875rem;
+    color: #ffffff;
+}
+
+input,
+select {
+    border-radius: 15px;
+    height: 70px;
+    width: 100%;
+    border: none;
+}
+
+form {
+    display: grid;
+    justify-content: start;
+    background-color: rgb(205, 213, 224, 0.2);
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.6);
+    width: 50vw;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 16px;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+}
+
+#submit {
+    width: 200%;
+    color: #4036A9;
+    font-size: 1.25rem;
+    grid-row-start: 4;
+}
+
+input[placeholder],
+textarea {
+    padding-left: 10px;
+    color: #000;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    gap: 6px;
+}
+
+#message {
+    width: 200%;
+    height: 150px;
+    text-wrap: wrap;
+    border-radius: 15px;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+@media (max-width:640px) {
+    form {
+        width: 90vw;
+        display: grid;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .inputs {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 0px;
+        gap: 6px;
+        width: 90vw;
+    }
+    header{
+        width: 100vw;
+    }
+    .email {
+        grid-row-start: 2;
+    }
+
+    .size {
+        grid-row-start: 3;
+    }
+
+    .subject {
+        grid-row-start: 4;
+    }
+    .message{
+        grid-row-start:5 ;
+    }
+    #message{
+        width: 98%;
+    }
+    #submit{
+        grid-row-start:6 ;
+        width: 100%;
+    }
+}

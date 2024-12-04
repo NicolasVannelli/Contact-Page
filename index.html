@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./resources/Logo.svg" alt="logo">
+        <h1>Interested in our business pricing?</h1>
+        <h2>Fill out the form to view details and we’ll contact you as soon as possible.</h2>
+    </header>
+    <main>
+        <form action="/submit-form" method="POST">
+            <div class="inputs">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Ethan Johnson">
+            </div>
+            <div class="inputs email">
+                <label for="email">Company Email</label>
+                <input type="email" name="email" id="email" placeholder="ethan@johnson.com">
+            </div>
+            <div class="inputs size">
+                <label for="size">Company Size</label>
+                <select name="company-size" id="size">
+                    <option value="xs">1-10 Employees</option>
+                    <option value="s">10-50 Employees</option>
+                    <option value="m">50-100 Employees</option>
+                    <option value="l">100-250 Employees</option>
+                    <option value="xl">250-1000 Employees</option>
+                </select>
+            </div>
+            <div class="inputs subject">
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject">
+                    <option value="blp">Building Landing pages</option>
+                </select>
+            </div>
+            <div class="message">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <input type="submit" value="Contact Sales" id="submit">
+        </form>
+    </main>
+</body>
+
+</html>
